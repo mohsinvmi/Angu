@@ -1,0 +1,64 @@
+Step No:1
+---------
+Create a floder on desktop and any where.
+floder name -> MyAngularProjects
+Select the floder url and type cmd at the starting 
+Install this commad npm install -g @angular/cli@15   --https://angular.io/guide/setup-local
+Create project ng new my-app
+ng serve 
+
+
+Step No:2
+---------
+Search on Google material angular ui
+website:https://material.angular.io/
+Getting Started with Angular Material  -> run this commad  ->  ng add @angular/material
+Then go the Components https://material.angular.io/components/categories
+Add ToolBar -> Code on -> app.component.html -> app.module.ts -> app.component.css
+
+
+Step No:3
+---------
+To Create a Components type -> cmd -> ng g c emp-add-edit
+<!-- 
+  *ng g c emp-add-edit
+  *import {MatDialogModule} from '@angular/material/dialog';
+  *import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
+  *Then imports in MatDialogModule
+  *Make Constructor in app.component.ts
+  Code#
+  -----
+  constructor(private _dialog: MatDialog) {}
+  OpenAddEditEmpForm()
+  {
+    this._dialog.open(EmpAddEditComponent,{
+      width: '40%',
+      height: '60%'
+    });
+}
+    *app.components.html -> <button mat-raised-button (click)="OpenAddEditEmpForm()">
+ -->
+
+
+
+Step No:4
+---------
+#code -> emp-add-edit.component.html
+-----
+<p>emp-add-edit works!</p>
+
+<div mat-dialog-title></div>
+<div mat-dialog-content>
+    <mat-form-field >
+        <mat-label>Input</mat-label> 
+        Enter Your Name
+        <input matInput>
+      </mat-form-field>
+<div mat-dialog-actions>
+    <button mat-raised-button color="warn" style="margin-right: 16px;">Cancel</button>
+    <button mat-raised-button color="primary">Save</button>
+</div>
+
+
+
+

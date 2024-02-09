@@ -1,0 +1,36 @@
+//What is Angular?
+Components base frameWork
+Angular is the development platform and it is build on typescript
+Angular main focus is to create the UI 
+Angular is the Single Page Application
+MVC FarmeWork 
+Open Source 
+Use NPM and Command Line Interface(CLI)
+--------------------------------------------------
+
+Setup and Installation
+----------------------
+How To Install Node [https://nodejs.org/en/download]
+How to install Angular Cli [https://angular.io/cli]  -> npm install -g @angular/cli  //npm install -g @angular/cli@12
+How to check the version of Angular -> ng version
+To uninstall a specific version of the Angular CLI  npm uninstall -g @angular/cli@12 || npm uninstall -g @angular/cli
+
+To create Project
+------------------
+To create, build, and serve a new, basic Angular project on a development server, go to the parent directory of your new workspace use the following commands:
+
+Code#1
+------
+ng new my-first-project
+cd my-first-project
+ng serve
+
+
+
+
+
+
+
+
+
+
